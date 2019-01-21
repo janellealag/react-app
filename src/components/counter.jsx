@@ -8,6 +8,16 @@ class Counter extends Component {
   // };
   //
 
+  componentDidUpdate(prevProps, prevState) {
+    // lifecycle hooks
+    //console.log(prevProps);
+    //console.log(prevState);
+  }
+
+  componentWillUnmount() {
+    console.log("Counter - unmount");
+  }
+
   renderTags() {
     if (this.state.tags.length === 0) return "There are no Tags!";
 
